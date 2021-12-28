@@ -17,4 +17,18 @@
 		</dependency>
 
 	</dependencies>
+	<repositories>
+	<repository>
+	<id>Minor</id>
+	<name>Releases</name>
+	<url>hhttp://localhost:8081/repository/releases/</url>
+	</repository>
+</repositories>
+<distributionManagement>
+  <snapshotRepository>
+    <id>Minor</id>
+    <name>Minor</name>
+    <url>http://localhost:8081/repository/Minor/</url>
+  </snapshotRepository>
+</distributionManagement>
 </project>

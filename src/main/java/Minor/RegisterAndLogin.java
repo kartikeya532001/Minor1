@@ -21,7 +21,7 @@ public class RegisterAndLogin {
 		fout.close();
 	}
 
-	void login() throws IOException {
+	boolean login() throws IOException {
 		System.out.println("Enter user name: ");
 		String inputName = scan.nextLine();
 		System.out.println("Enter password: ");
@@ -37,10 +37,12 @@ public class RegisterAndLogin {
 			if (str.contains(inputString)) {
 				System.out.println("Login successful");
 				decision = true;
+				break;
 			}
 		}
 		if (decision == false) {
 			System.out.println("Login unsuccessful");
 		}
+		return decision;
 	}
 }
